@@ -22,10 +22,11 @@ class CreateClinicsTable extends Migration
         $table->string('mobile');
         $table->string('cr_no')->nullable();
         $table->string('license_no');
-        $table->string('logo')>nullable();
-        $table->string('cr_image')>nullable();
-        $table->string('nhra_image')>nullable();
-        $table->integer('country_id')
+        $table->string('logo')->nullable();
+        $table->string('cr_image')->nullable();
+        $table->string('nhra_image')-
+        >nullable();
+        $table->integer('country_id');
         $table->string('postal_code');
         $table->integer('avg_doctors');
         $table->integer('avg_prescriptions');
