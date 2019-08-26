@@ -12,9 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('Clinicregister');
+    return view('welcome');
 });
 
-Auth::routes();
+Auth::Routes();
+Route::get('/register-clinic','Auth\RegisterController@showRegistrationForm');
+Route::post('/register-clinic','Auth\RegisterController@registerClinic')->name('register-clinic');
 
 Route::get('/home', 'HomeController@index')->name('home');
