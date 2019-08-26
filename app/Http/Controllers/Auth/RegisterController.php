@@ -126,7 +126,7 @@ class RegisterController extends Controller
         $new_clinic_person->email = $request->email;
         $new_clinic_person->password = bcrypt($request->password);
         $new_clinic_person->user_types_id = 1;
-         $new_clinic_person->status_id = 0;
+        $new_clinic_person->status_id = 0;
         $new_clinic_person->clinic_id = $new_clinic->id;
         $new_clinic_person->save();
 
